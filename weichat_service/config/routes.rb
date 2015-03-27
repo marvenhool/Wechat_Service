@@ -2,9 +2,9 @@ Rails.application.routes.draw do
 
    root 'wechat_supports#index'
 
-   get '/wechat_supports/',to: 'wechat_supports#index'
-   get '/wechat_supports/auth_wechat/',to: 'wechat_supports#auth_wechat'
-   get '/wechat_supports/process_request/',to: 'wechat_supports#process_request'
+   get '/wechat_supports/',to: 'wechat_supports#auth_wechat'
+   # get '/wechat_supports/auth_wechat/',to: 'wechat_supports#auth_wechat'
+   # get '/wechat_supports/process_request/',to: 'wechat_supports#process_request'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
